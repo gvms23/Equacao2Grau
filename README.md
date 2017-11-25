@@ -25,7 +25,7 @@ Dentro dos 3 TextBoxes que receberão A, B e C coloquei o seguinte código:
                 e.Handled = true; //Não permitir
 
             //só permitir digitar uma vez o traço para
-﻿            //números negativos
+            //números negativos
             if (e.KeyChar == '-'
                 && (sender as TextBox).Text.IndexOf('-') > -1)
             {
@@ -40,55 +40,56 @@ x = (-b + -Math.Sqrt(delta)) / (2 * a);
 
 Utilizei métodos nativos de conversão de dados:
 
- double a, b, c; 
+            double a, b, c; 
 
-﻿ a = Convert.ToDouble(txtA.Text);
- b = Convert.ToDouble(txtB.Text);
- c = Convert.ToDouble(txtC.Text);
+            a = Convert.ToDouble(txtA.Text);
+            b = Convert.ToDouble(txtB.Text);
+            c = Convert.ToDouble(txtC.Text);
+           //pois vale lembrar que todos os TextBoxes têm seus dados do tipo String.
 
-//pois vale lembrar que todos os TextBoxes têm seus dados do tipo String.
 Executei algumas validações caso receba valores nulos ou zeros no A, B e C:
 
-//se encontrar pontos nos textboxes
-﻿if (txtA.Text.Contains(".") || txtB.Text.Contains(".") || txtC.Text.Contains("."))
-{
-     MessageBox.Show("Retire os pontos e substitua-os por vírgula.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
-     return;
-}
+           //se encontrar pontos nos textboxes
+           if (txtA.Text.Contains(".") || txtB.Text.Contains(".") || txtC.Text.Contains("."))
+           {
+                MessageBox.Show("Retire os pontos e substitua-os por vírgula.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+           }
 
-//se for vazio
-if (txtA.Text == string.Empty || txtB.Text == string.Empty || txtC.Text == string.Empty)
-{
-     MessageBox.Show("A, B e C não podem estar vazios.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
-     return;
-}
+           //se for vazio
+           if (txtA.Text == string.Empty || txtB.Text == string.Empty || txtC.Text == string.Empty)
+           {
+                MessageBox.Show("A, B e C não podem estar vazios.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+           }
+           
 Também foi desenvolvida uma função para truncamento de números com casas decimais:
 
-public decimal TruncateDecimal(decimal valor, int precisao)
-{
-     decimal step = (decimal)Math.Pow(10, precisao);
-     int tmp = (int)Math.Truncate(step * valor);
-     return tmp/step;
-}
+           public decimal TruncateDecimal(decimal valor, int precisao)
+           {
+                decimal step = (decimal)Math.Pow(10, precisao);
+                int tmp = (int)Math.Truncate(step * valor);
+                return tmp/step;
+           }
 
-//Utilização:
-//Convert.ToDecimal(variavel), 2)
-﻿
-﻿//exemplo:
-double xb;
-xb = ((-b - deltaConvert)) / (2 * a);
-xb = Convert.ToDouble(TruncateDecimal(Convert.ToDecimal(xb), 2));
+Utilização:
 
-/*
-﻿Um número truncado com Math.Truncate iria ficar assim:
-2,3549798 ﻿=> 2 (ou seja, íamos perder propriedades importantes que vêm
-após a vírgula﻿).
+           //Convert.ToDecimal(variavel), 2)
 
-Mas com essa belíssima função, ele deixa assim:
-﻿﻿2,3549798 => 2,35 pois a precisão que coloquei foi 2, se eu tivesse
-colocado 3, ficaria 2,354 e assim por diante.
-*/﻿
-﻿
+           //exemplo:
+           double xb;
+           xb = ((-b - deltaConvert)) / (2 * a);
+           xb = Convert.ToDouble(TruncateDecimal(Convert.ToDecimal(xb), 2));
+
+           /*
+            Um número truncado com Math.Truncate iria ficar assim:
+           2,3549798 => 2 (ou seja, íamos perder propriedades importantes que vêm
+           após a vírgula).
+
+           Mas com essa belíssima função, ele deixa assim:
+             2,3549798 => 2,35 pois a precisão que coloquei foi 2, se eu tivesse
+           colocado 3, ficaria 2,354 e assim por diante.
+           */
  
 Vídeo mostrando execução:
 <div align="center">
