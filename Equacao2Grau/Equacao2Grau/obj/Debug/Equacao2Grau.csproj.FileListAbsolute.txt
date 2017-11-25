@@ -1,0 +1,15 @@
+C:\Users\Marcos\OneDrive\ProjetosC#\Desktop\ProjetosParalelos\merakiCalc\merakiCalc\merakiCalc\bin\Debug\merakiCalc.exe.config
+C:\Users\Marcos\OneDrive\ProjetosC#\Desktop\ProjetosParalelos\merakiCalc\merakiCalc\merakiCalc\bin\Debug\merakiCalc.exe
+C:\Users\Marcos\OneDrive\ProjetosC#\Desktop\ProjetosParalelos\merakiCalc\merakiCalc\merakiCalc\bin\Debug\merakiCalc.pdb
+C:\Users\Marcos\OneDrive\ProjetosC#\Desktop\ProjetosParalelos\merakiCalc\merakiCalc\merakiCalc\bin\Debug\mscorlib.dll
+C:\Users\Marcos\OneDrive\ProjetosC#\Desktop\ProjetosParalelos\merakiCalc\merakiCalc\merakiCalc\bin\Debug\normidna.nlp
+C:\Users\Marcos\OneDrive\ProjetosC#\Desktop\ProjetosParalelos\merakiCalc\merakiCalc\merakiCalc\bin\Debug\normnfc.nlp
+C:\Users\Marcos\OneDrive\ProjetosC#\Desktop\ProjetosParalelos\merakiCalc\merakiCalc\merakiCalc\bin\Debug\normnfd.nlp
+C:\Users\Marcos\OneDrive\ProjetosC#\Desktop\ProjetosParalelos\merakiCalc\merakiCalc\merakiCalc\bin\Debug\normnfkc.nlp
+C:\Users\Marcos\OneDrive\ProjetosC#\Desktop\ProjetosParalelos\merakiCalc\merakiCalc\merakiCalc\bin\Debug\normnfkd.nlp
+C:\Users\Marcos\OneDrive\ProjetosC#\Desktop\ProjetosParalelos\merakiCalc\merakiCalc\merakiCalc\obj\Debug\Equacao2Grau.csprojResolveAssemblyReference.cache
+C:\Users\Marcos\OneDrive\ProjetosC#\Desktop\ProjetosParalelos\merakiCalc\merakiCalc\merakiCalc\obj\Debug\Equacao2Grau.frmEquacao2Grau.resources
+C:\Users\Marcos\OneDrive\ProjetosC#\Desktop\ProjetosParalelos\merakiCalc\merakiCalc\merakiCalc\obj\Debug\Equacao2Grau.Properties.Resources.resources
+C:\Users\Marcos\OneDrive\ProjetosC#\Desktop\ProjetosParalelos\merakiCalc\merakiCalc\merakiCalc\obj\Debug\Equacao2Grau.csproj.GenerateResource.Cache
+C:\Users\Marcos\OneDrive\ProjetosC#\Desktop\ProjetosParalelos\merakiCalc\merakiCalc\merakiCalc\obj\Debug\merakiCalc.exe
+C:\Users\Marcos\OneDrive\ProjetosC#\Desktop\ProjetosParalelos\merakiCalc\merakiCalc\merakiCalc\obj\Debug\merakiCalc.pdb
